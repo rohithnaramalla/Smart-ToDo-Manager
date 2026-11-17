@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart To-Do Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>My Tasks ✨</h1>
+            <p>Organize your day, one task at a time.</p>
+        </header>
+
+        <div class="input-area">
+            <input type="text" id="taskInput"
+                placeholder="What needs to be done?">
+            <button onclick="addTask()">+ Add Task</button>
+        </div>
+
+        <div class="stats">
+            <div>Total Tasks: <span id="total">0</span></div>
+            <div>Completed: <span id="completed">0</span></div>
+            <div>Pending: <span id="pending">0</span></div>
+        </div>
+
+        <h2>My Task List</h2>
+        <ul id="taskList"></ul>
+
+        <p id="emptyMessage">No tasks yet. Add your first task!</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
